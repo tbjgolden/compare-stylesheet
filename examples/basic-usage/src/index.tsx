@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Gocvmmeyaahgakggbjwmcmif, { id } from 'gocvmmeyaahgakggbjwmcmif'
+import CompareStylesheet, { id } from 'compare-stylesheet'
 import './index.css'
 
 ReactDOM.render(
@@ -14,12 +14,12 @@ ReactDOM.render(
           <strong>Input</strong>
         </h3>
         <pre>
-          <code>{'<Gocvmmeyaahgakggbjwmcmif text="Lorem" />'}</code>
+          <code>{'<CompareStylesheet text="Lorem" />'}</code>
         </pre>
         <h3>
           <strong>Output</strong>
         </h3>
-        <Gocvmmeyaahgakggbjwmcmif text="Lorem" />
+        <CompareStylesheet text="Lorem" />
         <hr />
         <h2>
           <strong>Exported Function</strong>

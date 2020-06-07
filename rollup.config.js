@@ -108,7 +108,7 @@ const getCjsConfig = (input, bundleType) => ({
   input,
   external: getExternal(bundleType),
   output: {
-    file: `dist/gocvmmeyaahgakggbjwmcmif.cjs.${
+    file: `dist/compare-stylesheet.cjs.${
       isProduction(bundleType) ? 'production' : 'development'
     }.js`,
     format: 'cjs',
@@ -132,12 +132,12 @@ const getUmdConfig = (input, bundleType) => ({
   input,
   external: getExternal(bundleType),
   output: {
-    file: `dist/gocvmmeyaahgakggbjwmcmif.umd.${
+    file: `dist/compare-stylesheet.umd.${
       isProduction(bundleType) ? 'production' : 'development'
     }.js`,
     format: 'umd',
     globals: getGlobals(bundleType),
-    name: 'Gocvmmeyaahgakggbjwmcmif',
+    name: 'CompareStylesheet',
     sourcemap: true
   },
   plugins: getPlugins(bundleType)

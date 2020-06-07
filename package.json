@@ -1,13 +1,13 @@
 {
-  "name": "gocvmmeyaahgakggbjwmcmif",
+  "name": "compare-stylesheet",
   "version": "0.0.0-semantically-released",
-  "description": "rwmgkcxafpdrkuvtfszrfvwv",
+  "description": "Compare stylesheets by at rules, rules and declarations",
   "main": "dist/index.js",
-  "module": "dist/gocvmmeyaahgakggbjwmcmif.esm.js",
-  "jsnext:main": "dist/gocvmmeyaahgakggbjwmcmif.esm.js",
+  "module": "dist/compare-stylesheet.esm.js",
+  "jsnext:main": "dist/compare-stylesheet.esm.js",
   "browser": {
     "./dist/index.js": "./dist/index.js",
-    "./dist/gocvmmeyaahgakggbjwmcmif.esm.js": "./dist/gocvmmeyaahgakggbjwmcmif.esm.js"
+    "./dist/compare-stylesheet.esm.js": "./dist/compare-stylesheet.esm.js"
   },
   "typings": "dist/index.d.ts",
   "files": [
@@ -25,7 +25,6 @@
     "compile": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"*.{js,ts,tsx}\"",
     "lint": "eslint . --ext .ts,.tsx",
-    "preinstall": "node scripts/setup.js",
     "postinstall": "npx patch-package",
     "postbundle": "del compiled && cp-cli ./index.js ./dist/index.js",
     "start": "run-p start:*",
@@ -48,17 +47,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xrdnwftmsmirdshgpfoyocjh/gocvmmeyaahgakggbjwmcmif.git"
+    "url": "https://github.com/tbjgolden/compare-stylesheet.git"
   },
   "keywords": [
     "typescript"
   ],
-  "author": "zkhshfmpcvllotfgoigdwyrr <fnrnhzcpnugohyrqjsyolejv>",
+  "author": "Tom Golden <github@tbjgolden.com>",
   "license": "MIT",
   "bugs": {
-    "url": "github:xrdnwftmsmirdshgpfoyocjh/gocvmmeyaahgakggbjwmcmif/issues"
+    "url": "github:tbjgolden/compare-stylesheet/issues"
   },
-  "homepage": "github:xrdnwftmsmirdshgpfoyocjh/gocvmmeyaahgakggbjwmcmif",
+  "homepage": "github:tbjgolden/compare-stylesheet",
   "peerDependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
