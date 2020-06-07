@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - '.github/workflows/coveralls.yml'
-      - 'src/**'
 
 jobs:
   coverage:
