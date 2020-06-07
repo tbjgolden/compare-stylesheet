@@ -52,6 +52,9 @@ const stylesheet = `
 .black {
   color: black;
 }
+01134 {
+  hello: world;
+}
 `
 
 describe('compare stylesheet', () => {
@@ -89,6 +92,7 @@ describe('compare stylesheet', () => {
       ]
     ])
   })
+
   test('compare', () => {
     expect(compare(stylesheet, stylesheet)).toEqual([[], []])
     const [a, b] = compare('', stylesheet)
@@ -135,12 +139,14 @@ describe('compare stylesheet', () => {
     expect(g).toEqual([['.magenta', 'color', '#f0f']])
     expect(h).toEqual([])
   })
+
   test('areEqual', () => {
     expect(areEqual('', '')).toBe(true)
     expect(areEqual(stylesheet, stylesheet)).toBe(true)
     expect(areEqual('', stylesheet)).toBe(false)
     expect(areEqual(stylesheet, '')).toBe(false)
   })
+
   test('isSubsetOf', () => {
     expect(isSubsetOf('', '')).toBe(true)
     expect(isSubsetOf(stylesheet, stylesheet)).toBe(true)

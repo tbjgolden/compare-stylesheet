@@ -79,16 +79,17 @@ const normalizeBlock = (
         } else {
           normalizeBlock(child.block, addPath, [...path, atruleprelude])
         }
-      } else if (child.type === 'Rule') {
-        if ('children' in child.prelude) {
-          const selectors = child.prelude.children
-            .filter((child) => child.type === 'Selector')
-            .map((selector) => csstree.generate(selector as CssNode))
+      } else if (
+        child.type === 'Rule' &&
+        child.prelude.type === 'SelectorList'
+      ) {
+        const selectors = child.prelude.children
+          .filter((child) => child.type === 'Selector')
+          .map((selector) => csstree.generate(selector as CssNode))
 
-          selectors.map((selector) => {
-            normalizeBlock(child.block, addPath, [...path, selector])
-          })
-        }
+        selectors.map((selector) => {
+          normalizeBlock(child.block, addPath, [...path, selector])
+        })
       } else if (child.type === 'Declaration') {
         addPath([
           ...path,
