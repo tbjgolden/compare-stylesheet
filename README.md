@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/compare-stylesheet.svg?style=flat-square)](https://www.npmjs.com/package/compare-stylesheet)
 [![npm downloads](https://img.shields.io/npm/dm/compare-stylesheet.svg?style=flat-square)](https://www.npmjs.com/package/compare-stylesheet)
-![coverage](/scripts/jest/shield.svg)
+![Coveralls Github](https://img.shields.io/coveralls/github/tbjgolden/ainsley?style=flat-square)
 
 JavaScript methods (and TypeScript bindings) to normalize a stylesheet by the
 rules, properties and values it contains.
