@@ -17,7 +17,7 @@
 
 ▸ **areEqual**(`a`: string, `b`: string): *boolean*
 
-*Defined in [index.ts:56](https://github.com/tbjgolden/compare-stylesheet/blob/f5a31c0/src/index.ts#L56)*
+*Defined in [index.ts:56](https://github.com/tbjgolden/compare-stylesheet/blob/d12097f/src/index.ts#L56)*
 
 **Parameters:**
 
@@ -34,7 +34,7 @@ ___
 
 ▸ **compare**(`a`: string, `b`: string): *[string[][], string[][]]*
 
-*Defined in [index.ts:23](https://github.com/tbjgolden/compare-stylesheet/blob/f5a31c0/src/index.ts#L23)*
+*Defined in [index.ts:23](https://github.com/tbjgolden/compare-stylesheet/blob/d12097f/src/index.ts#L23)*
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ ___
 
 ▸ **isSubsetOf**(`sub`: string, `sup`: string): *boolean*
 
-*Defined in [index.ts:61](https://github.com/tbjgolden/compare-stylesheet/blob/f5a31c0/src/index.ts#L61)*
+*Defined in [index.ts:61](https://github.com/tbjgolden/compare-stylesheet/blob/d12097f/src/index.ts#L61)*
 
 **Parameters:**
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **normalize**(`css`: string): *string[][]*
 
-*Defined in [index.ts:4](https://github.com/tbjgolden/compare-stylesheet/blob/f5a31c0/src/index.ts#L4)*
+*Defined in [index.ts:4](https://github.com/tbjgolden/compare-stylesheet/blob/d12097f/src/index.ts#L4)*
 
 **Parameters:**
 
@@ -84,7 +84,7 @@ ___
 
 ▸ **normalizeBlock**(`node`: StyleSheetPlain | BlockPlain, `addPath`: function, `path`: string[]): *void[]*
 
-*Defined in [index.ts:64](https://github.com/tbjgolden/compare-stylesheet/blob/f5a31c0/src/index.ts#L64)*
+*Defined in [index.ts:64](https://github.com/tbjgolden/compare-stylesheet/blob/d12097f/src/index.ts#L64)*
 
 **Parameters:**
 
