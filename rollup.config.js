@@ -12,11 +12,6 @@ import pkg from './package.json'
 
 const inputs = ['./compiled/index.js']
 
-const knownDependencyNames = {
-  'react-dom': 'ReactDOM',
-  'react': 'React'
-}
-
 const kebabToPascal = (kebab) => {
   const pascal = kebab
     .split('-')
@@ -79,7 +74,7 @@ const getPlugins = (bundleType) => [
   babel({
     babelrc: false,
     exclude: 'node_modules/**',
-    presets: [['@babel/env', { loose: true, modules: false }], '@babel/react'],
+    presets: [['@babel/env', { loose: true, modules: false }]],
     plugins: ['@babel/transform-runtime'],
     runtimeHelpers: true
   }),
